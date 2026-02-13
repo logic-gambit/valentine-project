@@ -2,6 +2,7 @@
   "name": "valentine-project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://logic-gambit.github.io/valentine-project/",
   "type": "module",
   "scripts": {
     "dev": "vite",
