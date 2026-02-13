@@ -2,37 +2,29 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
+// Import images
+import img1 from "../assets/WhatsApp Image 2026-02-13 at 17.59.56.jpeg";
+import img2 from "../assets/WhatsApp Image 2026-02-13 at 17.59.57.jpeg";
+import img3 from "../assets/WhatsApp Image 2026-02-13 at 17.59.58 (1).jpeg";
+import img4 from "../assets/WhatsApp Image 2026-02-13 at 17.59.58 (2).jpeg";
+import img5 from "../assets/WhatsApp Image 2026-02-13 at 17.59.58.jpeg";
+import img6 from "../assets/WhatsApp Image 2026-02-13 at 17.59.59.jpeg";
+import img7 from "../assets/WhatsApp Image 2026-02-13 at 18.00.00.jpeg";
+import img8 from "../assets/WhatsApp Image 2026-02-13 at 18.00.01 (1).jpeg";
+import img9 from "../assets/WhatsApp Image 2026-02-13 at 18.00.01.jpeg";
+import img10 from "../assets/WhatsApp Image 2026-02-13 at 18.00.02.jpeg";
+
 const photos = [
-  {
-    id: 1,
-    src: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlfGVufDB8fDB8fHww",
-    caption: "Our First Date",
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1596767784033-c5982855f483?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxvdmV8ZW58MHx8MHx8fDA%3D",
-    caption: "Adventures",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1621252179027-94459d27d3ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFsZW50aW5lfGVufDB8fDB8fHww",
-    caption: "Sweet Memories",
-  },
-  {
-    id: 4,
-    src: "https://plus.unsplash.com/premium_photo-1675806652796-02758652d37f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9tYW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-    caption: "Silly Moments",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvdmV8ZW58MHx8MHx8fDA%3D",
-    caption: "Together Forever",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxvdmV8ZW58MHx8MHx8fDA%3D",
-    caption: "My Favorite Person",
-  },
+  { id: 1, src: img1, caption: "Beautiful Moment 1" },
+  { id: 2, src: img2, caption: "Beautiful Moment 2" },
+  { id: 3, src: img3, caption: "Beautiful Moment 3" },
+  { id: 4, src: img4, caption: "Beautiful Moment 4" },
+  { id: 5, src: img5, caption: "Beautiful Moment 5" },
+  { id: 6, src: img6, caption: "Beautiful Moment 6" },
+  { id: 7, src: img7, caption: "Beautiful Moment 7" },
+  { id: 8, src: img8, caption: "Beautiful Moment 8" },
+  { id: 9, src: img9, caption: "Beautiful Moment 9" },
+  { id: 10, src: img10, caption: "Beautiful Moment 10" },
 ];
 
 export default function PhotoGallery() {
@@ -57,9 +49,9 @@ export default function PhotoGallery() {
               alt={photo.caption}
               className="w-full h-48 object-cover transition-transform hover:scale-110 duration-500"
             />
-            <div className="p-2 text-center text-pink-400 font-medium text-sm">
+            {/* <div className="p-2 text-center text-pink-400 font-medium text-sm">
               {photo.caption}
-            </div>
+            </div> */}
           </motion.div>
         ))}
       </div>
@@ -91,9 +83,9 @@ export default function PhotoGallery() {
                 alt={selectedPhoto.caption}
                 className="w-full h-full object-contain max-h-[85vh] rounded-lg shadow-2xl"
               />
-              <p className="text-white text-center mt-4 text-xl font-serif">
+              {/* <p className="text-white text-center mt-4 text-xl font-serif">
                 {selectedPhoto.caption}
-              </p>
+              </p> */}
             </motion.div>
           </motion.div>
         )}
