@@ -89,9 +89,16 @@ export default function QuestionCard({ onYes }) {
             className="h-40 object-contain drop-shadow-lg"
           />
         </motion.div>
+        <h1 className="text-3xl md:text-4xl font-bold text-pink-600 mb-8 font-serif">
+          Hello, Hanny{" "}
+        </h1>
 
         <h1 className="text-3xl md:text-4xl font-bold text-pink-600 mb-8 font-serif">
           Will you be my Valentine?
+        </h1>
+        <h1 className="text-xl md:text-xl font-bold text-blues-600 mb-8 font-serif">
+          I'll dare you to click on No , If you click on No button then I'll
+          convince you many time , If you want try so you can .
         </h1>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center relative h-32">

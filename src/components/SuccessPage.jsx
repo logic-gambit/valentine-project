@@ -43,7 +43,7 @@ export default function SuccessPage() {
           YAY! I knew you'd say Yes! 💖
         </h1>
         <h1 className="text-4xl md:text-6xl font-bold text-pink-600 mb-4 animate-bounce">
-          I Love you Hanny madam 💖
+          I Love you Hanny 💖
         </h1>
         <p className="text-xl text-gray-700 mb-8">
           Best decision ever! scroll down for a surprise...

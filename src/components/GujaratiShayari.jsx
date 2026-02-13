@@ -28,7 +28,7 @@ export default function GujaratiShayari({ isOpen, onClose }) {
 
         <div className="text-center overflow-y-auto custom-scrollbar pr-2">
           <h3 className="text-xl font-serif text-pink-500 text-center mb-4 bg-pink-50 py-2 rounded-lg sticky top-0">
-            ✨ Gujarati Love Shayari ✨
+            ✨ મારા દિલના શબ્દો ✨
           </h3>
 
           <div className="space-y-4 text-left">
