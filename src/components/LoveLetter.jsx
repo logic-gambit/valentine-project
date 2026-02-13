@@ -31,9 +31,12 @@ export default function LoveLetter({ isOpen, onClose }) {
             My Dearest Valentine,
           </h2>
           <p className="text-gray-700 leading-relaxed font-serif text-lg text-left">
-            From the moment I met you, my life has been filled with so much more
-            joy and laughter. You are my best friend, my partner in crime, and
-            my greatest adventure.
+            મારી ખાસ વ્યક્તિને, હજી તું મારી પત્ની નથી બની, પણ દિલમાં તારો સ્થાન
+            પહેલેથી જ પાકું થઈ ગયું છે. તારી વાતોમાં શાંતિ છે, તારા સ્મિતમાં
+            મારી દુનિયા છે. તારી સાથે ભવિષ્યની કલ્પના કરું ત્યારે બધું વધુ સુંદર
+            લાગે છે. આપણે હજી સફરની શરૂઆતમાં છીએ, પણ મને પૂરો વિશ્વાસ છે કે આ
+            સફર પ્રેમ, સમજ અને ખુશીઓથી ભરેલી હશે. ધીમે ધીમે, હાથમાં હાથ રાખીને,
+            આપણે આપણું જીવન સાથે બનાવીએ — બસ એટલું જ મને સૌથી વધુ ખુશ કરે છે.
             <br />
             <br />
             I promise to always be there for you, to support you, and to love
@@ -45,7 +48,7 @@ export default function LoveLetter({ isOpen, onClose }) {
             <br />
             Forever yours,
             <br />
-            <span className="font-bold">Me</span>
+            <span className="font-bold">Bhavik Panchal</span>
           </p>
         </div>
       </motion.div>

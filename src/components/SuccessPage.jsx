@@ -8,20 +8,12 @@ export default function SuccessPage() {
   const [showLetter, setShowLetter] = useState(false);
 
   useEffect(() => {
-    const duration = 15 * 1000;
-    const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
     const randomInRange = (min, max) => Math.random() * (max - min) + min;
 
     const interval = setInterval(function () {
-      const timeLeft = animationEnd - Date.now();
-
-      if (timeLeft <= 0) {
-        return clearInterval(interval);
-      }
-
-      const particleCount = 50 * (timeLeft / duration);
+      const particleCount = 50;
       confetti({
         ...defaults,
         particleCount,
@@ -48,6 +40,9 @@ export default function SuccessPage() {
         <h1 className="text-4xl md:text-6xl font-bold text-pink-600 mb-4 animate-bounce">
           YAY! I knew you'd say Yes! 💖
         </h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-pink-600 mb-4 animate-bounce">
+          I Love you Hanny madam 💖
+        </h1>
         <p className="text-xl text-gray-700 mb-8">
           Best decision ever! scroll down for a surprise...
         </p>
@@ -57,6 +52,12 @@ export default function SuccessPage() {
           className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors cursor-pointer"
         >
           Read a Letter for You 💌
+        </button>
+        <button
+          onClick={() => setShowLetter(true)}
+          className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-colors cursor-pointer"
+        >
+          Read my lovely thoughts
         </button>
       </motion.div>
 
